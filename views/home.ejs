@@ -8,11 +8,11 @@
 
     <% ejsPosts.forEach(function(post){ %>
         <h1>
-            <%= post.hTitle %>
+            <%= post.title %>
         </h1>
         <p>
-            <%= post.hPostBody.substring(0,100) + " ..." %>
-                <a href="/posts/ <%= post.hTitle %> ">Read More..</a>
+            <%= post.bBody.substring(0,100) + " ..." %>
+                <a href="/posts/<%=post._id%>">Read More..</a>
         </p>
         <% }); %>
 
